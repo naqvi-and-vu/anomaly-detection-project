@@ -8,5 +8,20 @@ def prep_logs(df):
     df = df.rename(columns={'path':'endpoint',
                        'name':'cohort'})
     df = df.drop(columns=['id'])
-    df = df.drop_duplicates()
+    df['accessed_after'] = df.index > df.end_date
+    df['accessed_after'] = df['accessed_after'].astype(int)
+    
+    # check for duplicates 
+    num_dups = df.duplicated().sum()
+    # if we found duplicate rows, we will remove them, log accordingly and proceed
+    if num_dups > 0:
+        print(f'There are {num_dups} duplicate rows in your dataset - these will be dropped.')
+        print ('----------------')
+        # remove the duplicates found
+        df = df.drop_duplicates()
+    else:
+        # otherwise, we log that there are no dupes, and proceed with our process
+        print(f'There are no duplicate rows in your dataset.')
+        print('----------------')
+
     return df
