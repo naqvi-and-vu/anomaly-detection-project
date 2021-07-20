@@ -8,4 +8,5 @@ def prep_logs(df):
     df = df.rename(columns={'path':'endpoint',
                        'name':'cohort'})
     df = df.drop(columns=['id'])
+    df = df.drop_duplicates()
     return df
