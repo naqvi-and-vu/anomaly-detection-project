@@ -20,8 +20,8 @@ def new_curriculum_logs_data():
 def get_curriculum_logs_data():
     '''get connection, returns curriculum log's logs table into a dataframe and creates a csv for us'''
     if os.path.isfile('curriculum-access.csv'):
-        df = pd.read_csv('curriculum-access.csv')
+        df = pd.read_csv('curriculum-access.csv', index_col=0)
     else:
         df = new_curriculum_logs_data()
-        df.to_csv('curriculum-access.csv', index=False)
+        df.to_csv('curriculum-access.csv')
     return df
