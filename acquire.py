@@ -2,11 +2,11 @@ import os
 import pandas as pd
 from env import user, host, password 
 
-def get_connection(db, username=username, host=host, password=password):
+def get_connection(db, user=user, host=host, password=password):
     '''
     Creates a connection URL from desired database to access from SQL, and login credentials.
     '''
-    return f'mysql+pymysql://{username}:{password}@{host}/{db}'
+    return f'mysql+pymysql://{user}:{password}@{host}/{db}'
 
 
 # def new_curriculum_logs_data():
