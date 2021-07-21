@@ -33,7 +33,7 @@ def prep_logs(df):
     #turn accessed_after to integers instead of booleans
     df['accessed_after'] = df['accessed_after'].astype(int)
     
-    df = df.program_id.replace(np.Nan, 2.0)
+    df = df.program_id.replace(np.NaN, 2.0)
     
     #create program_name column
     df['program_name'] = 0
