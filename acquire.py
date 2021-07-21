@@ -4,7 +4,7 @@ from env import username, host, password
 
 def get_connection(db, username=username, host=host, password=password):
     '''
-    Creates a connection URL
+    Creates a connection URL from desired database to access from SQL, and login credentials.
     '''
     return f'mysql+pymysql://{username}:{password}@{host}/{db}'
 
