@@ -33,8 +33,11 @@ def prep_logs(df):
     #turn accessed_after to integers instead of booleans
     df['accessed_after'] = df['accessed_after'].astype(int)
     
+    df = df.program_id.replace(np.Nan, 2.0)
+    
     #create program_name column
     df['program_name'] = 0
+    
     
     #program_id of 1 is Full Stack PHP
     df['program_name'] = np.where(df['program_id']==1, 'Full Stack PHP', 0)
