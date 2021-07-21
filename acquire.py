@@ -2,11 +2,11 @@ import os
 import pandas as pd
 from env import user, host, password 
 
-# def get_connection(db, username=username, host=host, password=password):
-#     '''
-#     Creates a connection URL from desired database to access from SQL, and login credentials.
-#     '''
-#     return f'mysql+pymysql://{username}:{password}@{host}/{db}'
+def get_connection(db, username=username, host=host, password=password):
+    '''
+    Creates a connection URL from desired database to access from SQL, and login credentials.
+    '''
+    return f'mysql+pymysql://{username}:{password}@{host}/{db}'
 
 
 # def new_curriculum_logs_data():
@@ -40,7 +40,7 @@ def get_curriculum_data(cached=False):
                 FROM cohorts 
                 RIGHT JOIN logs ON cohorts.id=logs.cohort_id;
         '''
-        curriculum_df = pd.read_sql(sql_query, get_db_url('curriculum_logs'))
+        curriculum_df = pd.read_sql(sql_query, get_connection('curriculum_logs'))
         #also cache the data we read from the db, to a file on disk
         curriculum_df.to_csv('curriculum-access.csv')
     else:
