@@ -9,9 +9,9 @@ def prep_logs(df):
     renaming columns for easier use, drop unecessary columns, create new features,
     create objectified columns for easier read, and drops duplicates
     '''
-    
+    #date to datetime
     df.date = pd.to_datetime(df.date)
-    #set our index to datetime format
+    #set our index as date
     df = df.set_index(df.date)
     
     #change start_date object column to datetime format
@@ -20,12 +20,6 @@ def prep_logs(df):
     #change end_date object column to datetime format
     df.end_date = pd.to_datetime(df.end_date)
     
-    #rename path to endpoint, and name to cohort
-#     df = df.rename(columns={'path':'endpoint',
-#                        'name':'cohort'})
-    
-    #drop id, as cohort_id is synonomous 
-#     df = df.drop(columns=['id'])
     
     #create accessed_after column which tells us if the user accessed the material after their graduation date at the time of query
     df['accessed_after'] = df.index > df.end_date
