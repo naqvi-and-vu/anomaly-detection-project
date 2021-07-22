@@ -31,6 +31,7 @@ In this anomaly detection project, we will be exploring Codeup's curriculum acce
 2.   [Project Deliverables         ](#2-project-deliverables)
 3.   [Project Questions            ](#3-project-questions)
 4.   [Findings                     ](#4-findings)
+5.   [Data Dictionary              ](#5-data-dictionary)
 
 
 ### 1. Project Description
@@ -60,5 +61,23 @@ As stated in the email, we will need to create a single slide to document our fi
 ### 4.) Findings
 TBA
  
+
+### 5.) Data Dictionary
+| Column Name    | Description                                                                                     |
+|----------------|-------------------------------------------------------------------------------------------------|
+| accessed_after | 1 if page accessed after student's graduation date, 0 if page was accessed as a current student |
+| cohort         | cohort name                                                                                     |
+| created_at     | date and time curriculum was created                                                            |
+| date           | date of access                                                                                  |
+| end_date       | student's graduation date (end of class)                                                        |
+| endpoint       | path within curriculum page                                                                     |
+| ip             | IP address that accessed the curriculum page                                                    |
+| program_id     | 1 for PHP, 2 for web development, 3 for data science, 4 for front end                           |
+| program_name   | course that the student was enrolled in                                                         |
+| start_date     | date of student's first day of class                                                            |
+| time           | time that the page was accessed                                                                 |
+| user_count     | the number of times that student accessed the curriculum                                        |
+| user_id        | the student's identification number                                                             |
+| user_proba     | probability of an access being that particular student                                          |
 
 
