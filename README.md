@@ -62,14 +62,14 @@ As stated in the email, we will need to create a single slide to document our fi
 
 <br>
 
-* Lesson with the most traffic by program: *
+**Lesson with the most traffic by program:**
 - Web Development: Javascript I
 - Data Science: Classification Overview 
 - Full Stack PHP: Javascript I
 - Front End: HTML/CSS 
 <br>
 
-* Inactive Students? *
+**Inactive Students?**
 - There are 36 students who accessed the curriculum less than 50 times while they were active. 
 - Half of those students have not graduated yet (the data stopped recording at 4/21/21, they graduate later)
 - Marco, Neptune, and Oberon had not graduated at the time this dataset was made.
@@ -77,7 +77,7 @@ As stated in the email, we will need to create a single slide to document our fi
 - Most of these inactive students accessed the curriculum up until ~ 3 days after their start date. Possible they left.
 <br>
 
-* Suspicious Activity * 
+**Suspicious Activity**
 - User 341 has a very high number of page views, 272 pages accessed on 03-03-2019 and 104 pages accessed 04-21-2020
 - Access the pages in a very short time span, over a wide variety of subjects
 - They graduated 6-04-2019
@@ -85,7 +85,8 @@ As stated in the email, we will need to create a single slide to document our fi
 <br>
 
 
-* Post-Grad Lessons *
+**Post-Grad Lessons **
+
 These are the top 3 lessons for each program accessed post-graduation
 - Web development: JavaScript-I, Spring, HTML-CSS
 - Data Science: SQL, Classification Overview (our first machine learning!), Classification Scaling
@@ -93,7 +94,7 @@ These are the top 3 lessons for each program accessed post-graduation
 - Front End: content html-css, favicon, and introduction (expected for staff)
 <br>
 
-* Least Accessed Lessons *
+**Least Accessed Lessons**
 - Assuming least accessed pages were accessed at least once
 - There were 458 pages accessed only once from the time of creation to 04/21/2021
 - Most of these were professional development, some were curriculum lessons.
