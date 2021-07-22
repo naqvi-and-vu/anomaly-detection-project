@@ -49,7 +49,7 @@ As stated in the email, we will need to create a single slide to document our fi
 <br>
 <br>
 
-### 3.) Project Questions
+### 3. Project Questions
  - 1. Which lesson appears to attract the most traffic consistently across cohorts (per program)?
  - 2. Are there students who, when active, hardly access the curriculum? If so, what information do you have about these students?
  - 3. Is there any suspicious activity, such as users/machines/etc accessing the curriculum who shouldn’t be? Does it appear that any web-scraping is happening? Are there any suspicious IP addresses?
@@ -59,7 +59,7 @@ As stated in the email, we will need to create a single slide to document our fi
 <br>
 <br>
 
-### 4.) Findings
+### 4. Findings
 
 <br>
 
@@ -97,7 +97,7 @@ These are the top 3 lessons for each program accessed post-graduation
 
 **Least Accessed Lessons**
 - Assuming least accessed pages were accessed at least once
-- There were 458 pages accessed only once from the time of creation to 04/21/2021
+- There were 468 pages accessed only once from the time of creation to 04/21/2021
 - Most of these were professional development, some were curriculum lessons.
 - Examples include: conditionals, editing with vim, control statements and loops.
 
@@ -106,7 +106,7 @@ These are the top 3 lessons for each program accessed post-graduation
 
  
 
-### 5.) Data Dictionary
+### 5. Data Dictionary
 | Column Name    | Description                                                                                     |
 |----------------|-------------------------------------------------------------------------------------------------|
 | accessed_after*| 1 if page accessed after student's graduation date, 0 if page was accessed as a current student |
@@ -129,9 +129,12 @@ These are the top 3 lessons for each program accessed post-graduation
 <br>
 <br>
 
-### 6.) Project Reproduction
+### 6. Project Reproduction
 
 Should project reproduction be done, please take the following steps:
  - Make an env.py file with your user, password, and host credentials to access Codeup's SQL server
  - Download acquire.py and prepare.py scripts 
  - Use our [final notebook](https://github.com/naqvi-and-vu/anomaly-detection-project/blob/main/final_notebook.ipynb) as a guide
+ 
+ <br>
+ - You can also clone our repository into your local terminal, and make your own env.py file, and t
