@@ -137,4 +137,4 @@ Should project reproduction be done, please take the following steps:
  - Use our [final notebook](https://github.com/naqvi-and-vu/anomaly-detection-project/blob/main/final_notebook.ipynb) as a guide
  
  <br>
- - You can also clone our repository into your local terminal, and make your own env.py file, and t
+ - You can also clone our repository into your local terminal, make your own env.py file, and then follow the steps in our final notebook. This is ideal if you just want to adjust parameters. 
