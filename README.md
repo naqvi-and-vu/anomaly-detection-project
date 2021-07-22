@@ -62,7 +62,7 @@ As stated in the email, we will need to create a single slide to document our fi
 
 <br>
 
-**Lesson with the most traffic by program:**
+**Lesson With Most Traffic by Program:**
 - Web Development: Javascript I
 - Data Science: Classification Overview 
 - Full Stack PHP: Javascript I
@@ -85,7 +85,7 @@ As stated in the email, we will need to create a single slide to document our fi
 <br>
 
 
-**Post-Grad Lessons **
+**Post-Grad Lessons**
 
 These are the top 3 lessons for each program accessed post-graduation
 - Web development: JavaScript-I, Spring, HTML-CSS
